@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Black Ops One
+- Font Author: Copyright (c) 2011-2012, Sorkin Type Co (www.sorkintype.com) with Reserved Font Names "Black Ops" and "Black Ops One".
+- Font Source: http://fonts.gstatic.com/s/blackopsone/v12/qWcsB6-ypo7xBdr6Xshe96H3WDzRtjkho4M.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
