@@ -28,6 +28,10 @@
     background: #232526;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     width: 1.7rem;
     height: 2.4rem;
@@ -197,7 +201,7 @@ header{
 }
 
 .sidebar{
-    background-color: rgba(27, 31, 35, 0.9);
+    background-color: rgba(27, 31, 35, 0.95);
     width: 20rem;
     height: 100vh;
     
@@ -360,12 +364,37 @@ header{
 }
 
 .sessao-about{
+    width: 100%;
     background-color: #EEEEEE;
+    padding-bottom: 7rem;
+}
+
+.obout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-img img{
+    height: 250px;
+    width: 250px;
+    border-radius: 2rem;
+}
+
+.obout-body{
+    width: 50%;
+    margin-left: 40px;
+}
+
+.obout-body p{
+    color: var(--cor-tertiary);
+    font-family: var(--font-primary);
+    text-align: justify;
 }
 
 .sessao-cotact{
    width: 100%;
-   height: 100vh;
+   padding-bottom: 7rem;
 }
 
 .contact-body{
@@ -401,8 +430,10 @@ header{
 }   
 
 .input-group textarea{
-    width: 835px;
+    min-width: 835px;
+    max-width: 835px;
     min-height: 100px;
+    max-height: 30vh;
     padding: 15px 9px;
 }
 
@@ -445,4 +476,42 @@ header{
     margin-top: 2rem;
     margin-left: 16px;
     letter-spacing: 1px;
+}
+
+footer{
+    width: 100%;
+    height: 8rem;
+    background-color: var(--cor-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content p{
+    color: var(--cor-secundary);
+    font-family: var(--font-primary);
+    letter-spacing: .04rem;
+    font-size: .9rem;
+}
+
+.social-list a{
+    color: var(--cor-primary);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+    padding: 0.6rem;
+}
+
+.social-list a:hover{
+    color: var(--cor-secundary);
 }

@@ -24,7 +24,7 @@
 
       </div>
 
-      <header>
+      <header id="home">
         <div class="img-wrapper">
           <!-- <img src="/imagens/img_bg.jpg" alt=""> -->
           <video autoplay loop src="Video/bg2.mp4"></video>
@@ -32,7 +32,7 @@
         <div class="banner">
           <h1>Systems analyst & Developer</h1>
           <p>Ruan Pezzin Miniguite</p>
-          <button>learn more</button>
+          <button  onclick="window.location='#about'"> learn more</button>
         </div>
       </header>
 
@@ -40,11 +40,11 @@
       <aside class="sidebar">
         <nav>
           <ul class="menu">
-            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
             <!-- <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li> -->
-            <li class="menu-item"><a href="#" class="menu-link">About</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+            <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+            <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
           </ul>
         </nav>
 
@@ -61,16 +61,16 @@
       <!-- SESSÃO CONHECIMENTO -->
       <!-- SESSÃO PROJETOS -->
 
-      <section class="sessao-about">
+      <section class="sessao-about" id="about">
         <div class="sessao-header">
           <h1>About</h1>
         </div>
         <div class="obout">
           <div class="my-img">
-
+            <img src="/imagens/perfil.jpg" alt="Foto de perfil">
           </div>
           <div class="obout-body">
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eum eos quidem, voluptas doloribus provident reprehenderit debitis ipsam possimus blanditiis neque est! Officiis odit ipsam nisi libero atque minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus reprehenderit, vitae doloremque at impedit non velit fuga quae facilis, ratione, sint consequuntur. Earum temporibus quis recusandae explicabo, delectus optio!</p>
           </div>
           
         </div>
@@ -78,7 +78,7 @@
 
     
   
-    <section class="sessao-cotact">
+    <section class="sessao-cotact" id="contact">
       <div class="sessao-header">
         <h1>Contact</h1>
       </div>
@@ -100,14 +100,25 @@
           </div>
           <button type="submit" class="btn-submit">Sead</button>
           <div>
-            <p>If you have any questions, need help with an order or just want to chat, please contact me: Ruanminiguite@gmail.com</p>
+            <p>If you have any questions, need help or just want to chat, please contact me: ruanminiguite@gmail.com</p>
           </div>
         </form>
       </div>
     </section>
-    
-    
     </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          Copyright &copy; 2021 - All rights reserved.
+        </p>
+        <div class="social-list">
+          <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>   
 
   </body>
 
