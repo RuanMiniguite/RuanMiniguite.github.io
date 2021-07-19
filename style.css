@@ -16,7 +16,7 @@
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
 
-    --cor-primary: #A1A6A5;
+    --cor-primary: #6e6e6e;
     /* --cor-secundary: #00ADB5; */
     --cor-secundary: #FFFFFF;
     --cor-tertiary: #222326;
@@ -40,6 +40,7 @@
     justify-content: space-evenly;
     cursor: pointer;
     transition: all 1.3s;
+    z-index: 999;
 }
 
 
@@ -111,6 +112,15 @@ header{
     animation: zoom 25s;
 }
 
+.img-wrapper video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    
+    animation: zoom 25s; 
+}
+
 @keyframes zoom {
     0%{
         transform: scale(1.3);
@@ -171,9 +181,8 @@ header{
 
 .banner button:hover{
     color: var(--cor-secundary);
- 
-    background: -webkit-linear-gradient(to right, #414345a2, #232526a2);  
-    background: linear-gradient(to right, #414345a2, #232526a2);
+    /* background: -webkit-linear-gradient(to right, #414345a2, #232526a2);  
+    background: linear-gradient(to right, #414345a2, #232526a2); */
 
 }
 
@@ -191,10 +200,12 @@ header{
     background-color: rgba(27, 31, 35, 0.9);
     width: 20rem;
     height: 100vh;
+    
     position: fixed;
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 990;
 }
 
 .show-menu .sidebar{
@@ -346,4 +357,92 @@ header{
     object-fit: cover;
     width: 75%;
     border-radius: 45rem;
+}
+
+.sessao-about{
+    background-color: #EEEEEE;
+}
+
+.sessao-cotact{
+   width: 100%;
+   height: 100vh;
+}
+
+.contact-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-input{
+    margin-top: 1rem;
+    display: flex;
+    width: 50%;
+    justify-items: auto;
+}
+
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    font-family: var(--font-action);
+    width: 25rem;
+    height: 40px;
+    min-height: 44px;
+    border: 1px solid #ccc;
+    text-rendering: optimizeLegibility;
+    outline: none;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    padding-left: 10px;
+    
+}   
+
+.input-group textarea{
+    width: 835px;
+    min-height: 100px;
+    padding: 15px 9px;
+}
+
+
+.field-label{
+    position: absolute;
+    left: 0;
+    margin-left: 1.3rem;
+    top: 0;
+    font-family: var(--font-action);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-submit{
+    color: var(--cor-secundary);
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: var(--font-action);
+    background-color: var(--cor-tertiary);
+    border-color: #FFFFFF;
+    border: .1rem solid;
+    margin-left: 16px;
+    padding: .7rem 3rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.btn-submit:hover{
+    background-color: var(--cor-primary);
+}
+
+.contact-body p{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 16px;
+    letter-spacing: 1px;
 }
