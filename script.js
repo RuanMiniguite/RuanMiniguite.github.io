@@ -4,8 +4,25 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
 
 const overlay = document.querySelector(".overlay");
 
-window.addEventListener("load", setTimeout(function () {
+window?.addEventListener("load", function () {
     overlay.style.display = "none";
-}, 1000))
+});
 
-//document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+
+const send = async () => {
+
+    const response = await fetch('https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail', {
+      method: 'POST',
+      body: {
+        "email" : document.querySelector("#e-mail"),
+        "name" : document.querySelector("#name"),
+        "msg" :  document.querySelector("#message")
+      }, 
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const myJson = await response.json(); 
+    console.log(myJson);
+
+  }

@@ -366,9 +366,10 @@ header{
 }
 
 .my-img img{
-    height: 350px;
-    width: 250px;
+    height: 300px;
+    width: 230px;
     border-radius: 2%;
+    object-fit: cover;
 }
 
 .obout-body{
