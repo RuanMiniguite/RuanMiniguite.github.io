@@ -10,38 +10,45 @@ window?.addEventListener("load", function () {
 
 
 const send = async () => {
-    event.preventDefault();
+  event.preventDefault();
 
-    let nome = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let msg = document.getElementById("message").value;
-    
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append( "Access-Control-Allow-Origin", "*");
+   
+  var raw = JSON.stringify({
+    "email": "RuanMiniguite@gmail.com",
+    "name": "Ruan",
+    "msg": "portifolio"
+  });
 
-    console.log(nome);
-    console.log(email);
-    console.log(msg);
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
 
-    body = {
-        "email" : nome,
-        " name" : email,
-        "msg" :  msg
-    }
+fetch("https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 
-    dopost(body);
 
-  }
-
-function dopost(body){
-    let request = new XMLHttpRequest()
-    let url = "https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail"
-
-    request.open("POST", url, true)
-    request.setRequestHeader("Content-Type", "application/json")
-    request.send(JSON.stringify(body))
-
-    request.onload = function(){
-        console.log(this.responseText)
-    }
-
-    return request.responseText
+  let nome = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let msg = document.getElementById("message").value;
+  
 }
+  // const response = await fetch('https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail', {
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       "email" : email,
+  //       "name" : nome,
+  //       "msg" : msg
+  //     }), 
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     }
+  //   });
+  //   const myJson = await response.json; 
