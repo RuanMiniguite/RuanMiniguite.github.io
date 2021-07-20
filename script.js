@@ -11,6 +11,12 @@ window?.addEventListener("load", function () {
 
 const send = async () => {
 
+    console.log("entrou");
+
+    console.log(document.querySelector("#e-mail"));
+    console.log(document.querySelector("#name"));
+    console.log(document.querySelector("#message"));
+
     const response = await fetch('https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail', {
       method: 'POST',
       body: {
@@ -23,6 +29,5 @@ const send = async () => {
       }
     });
     const myJson = await response.json(); 
-    console.log(myJson);
 
   }
