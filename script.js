@@ -10,24 +10,38 @@ window?.addEventListener("load", function () {
 
 
 const send = async () => {
+    event.preventDefault();
 
-    console.log("entrou");
+    let nome = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let msg = document.getElementById("message").value;
+    
 
-    console.log(document.querySelector("#e-mail"));
-    console.log(document.querySelector("#name"));
-    console.log(document.querySelector("#message"));
+    console.log(nome);
+    console.log(email);
+    console.log(msg);
 
-    const response = await fetch('https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail', {
-      method: 'POST',
-      body: {
-        "email" : "RuanMiniguite@gmail.com",
-        "name" : "Ruan",
-        "msg" :  "msg portifolio"
-      }, 
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    const myJson = await response.json(); 
+    body = {
+        "email" : nome,
+        " name" : email,
+        "msg" :  msg
+    }
+
+    dopost(body);
 
   }
+
+function dopost(body){
+    let request = new XMLHttpRequest()
+    let url = "https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail"
+
+    request.open("POST", url, true)
+    request.setRequestHeader("Content-Type", "application/json")
+    request.send(JSON.stringify(body))
+
+    request.onload = function(){
+        console.log(this.responseText)
+    }
+
+    return request.responseText
+}

@@ -85,22 +85,22 @@
         <h1>Contact</h1>
       </div>
       <div class="contact-body">
-        <form>
+        <form onsubmit="send()">
           <div class="box-input">
             <div class="input-group">
               <input type="text" class="field" id="name" required>
               <label for="name" class="field-label">Name</label>
             </div>
             <div class="input-group">
-              <input type="email" class="field" id="e-mail" required>
-              <label for="e-mail" class="field-label">E-mail</label>
+              <input type="email" class="field" id="email" required>
+              <label for="email" class="field-label">E-mail</label>
             </div>
           </div> 
           <div class="input-group">
             <textarea type="field" class="field" id="message" required></textarea>
             <label for="message" class="field-label">Message</label>
           </div>
-          <button type="submit" class="btn-submit" onclick="send()" >Send</button>
+          <button type="submit" class="btn-submit">Send</button>
           <div>
             <p>If you have any questions, need help or just want to chat, please contact me: ruanminiguite@gmail.com</p>
           </div>
