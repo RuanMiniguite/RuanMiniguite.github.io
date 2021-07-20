@@ -20,9 +20,9 @@ const send = async () => {
     const response = await fetch('https://ruanminiguite.wixsite.com/my-site/_functions/enviarEmail', {
       method: 'POST',
       body: {
-        "email" : document.querySelector("#e-mail"),
-        "name" : document.querySelector("#name"),
-        "msg" :  document.querySelector("#message")
+        "email" : "RuanMiniguite@gmail.com",
+        "name" : "Ruan",
+        "msg" :  "msg portifolio"
       }, 
       headers: {
         'Content-Type': 'application/json'
