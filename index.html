@@ -13,19 +13,22 @@
   </head>
 
   <body>
-  
+    <!-- LOADER -->
     <div class="overlay">
         <img src="imagens/loader.gif">
     </div>
     
+    <!-- CONTAINER MAIN -->
     <div class="container">
 
+      <!-- ICONE MENU LATERAL -->
       <div class="hamburguer">
         <div class="line" id="line1"></div>
         <div class="line" id="line2"></div>
         <div class="line" id="line3"></div>
         <span>Fechar</span>
-      </div>
+      </div> <!-- FIM ICONE MENU LATERAL -->
+      
 
       <!-- SESSÂO HOME -->
       <header id="home">
@@ -37,7 +40,8 @@
           <p>Ruan Pezzin Miniguite</p>
           <button  onclick="window.location='#about'"> learn more</button>
         </div>
-      </header>
+      </header> <!-- FIM SESSÂO HOME -->
+
 
       <!-- BARRA LATERAL -->
       <aside class="sidebar">
@@ -51,16 +55,19 @@
           </ul>
         </nav>
 
+
         <!-- REDES SOCIAIS -->
         <div class="social-media">
             <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-      </aside>
+      </aside> <!-- FIM BARRA LATERAL -->
+       
 
       <!-- SESSÃO CONHECIMENTO -->
       <!-- SESSÃO PROJETOS -->
+
 
       <!-- SESSÃO SOBRE -->
       <section class="sessao-about" id="about">
@@ -69,47 +76,42 @@
         </div>
         <div class="obout">
           <div class="my-img">
-            <img src="/imagens/perfil1.jpg" alt="Foto de perfil">
+            <img src="/imagens/perfil2.jpg" alt="Foto de perfil">
           </div>
           <div class="obout-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eum eos quidem, voluptas doloribus provident reprehenderit debitis ipsam possimus blanditiis neque est! Officiis odit ipsam nisi libero atque minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus reprehenderit, vitae doloremque at impedit non velit fuga quae facilis, ratione, sint consequuntur. Earum temporibus quis recusandae explicabo, delectus optio!</p>
+            <h1>Hi I'm Ruan</h1>
+            <p>I am a student of information systems at the Federal Institute of Espírito Santo campus Cachoeiro de Itapemirim, I am currently dedicating myself to becoming a full stack developer, technology enthusiast, always looking for new challenges in the world of technology, in my spare time I like to study astronomy, fascinated by the cosmos</p>
+            <p id="p2">"In view of the vastness of time and the immensity of space, it is a joy for me to share a time and a planet with you!"</p>
+            <p id="p3">"Carl Sagan"</p>
           </div>
         </div>
-      </section>
-
+      </section> <!-- FIM SESSÃO SOBRE -->
+      
     
-    <!-- SESSÂO CONTATO -->
-    <section class="sessao-cotact" id="contact">
-      <div class="sessao-header">
-        <h1>Contact</h1>
-      </div>
-      <div class="contact-body">
-        <form onsubmit="send()">
-            <div class="box-input">
-              <div class="input-group">
-                <input type="text" class="field" id="name" required>
-                <label for="name" class="field-label">Name</label>
-              </div>
-              <div class="input-group">
-                <input type="email" class="field" id="email" required>
-                <label for="email" class="field-label">E-mail</label>
-              </div>
-            </div> 
-            <div class="area">
-              <div class="input-group">
-                <textarea type="field" class="field" id="message" required></textarea>
-                <label for="message" class="field-label" id="label1">Message</label>
-              </div>
+      <!-- SESSÂO CONTATO -->
+      <section class="sessao-contact" id="contact">
+        <div class="sessao-header">
+          <h1>Contact</h1>
+        </div>
+        
+        <div class="contact-body">
+          <form onsubmit="send()" id="form" class="form"> 
+            <div class="input-group">
+              <input type="text" class="field" id="name" required>
+              <label for="name" class="field-label">Name</label>
             </div>
-          <button type="submit" class="btn-submit">Send</button>
-          <div>
+            <div class="input-group">
+              <input type="email" class="field" id="email" required>
+              <label for="email" class="field-label">Email</label>
+            </div>
+            <button type="submit" class="btn-submit">Send</button>
             <p>If you have any questions, need help or just want to chat, please contact me: ruanminiguite@gmail.com</p>
-          </div>
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+      </section> <!-- FIM SESSÂO CONTATO  -->
 
-    </div>
+    </div>  <!-- FIM CONTAINER MAIN -->
+   
 
     <!-- RODAPÉ -->
     <footer>
@@ -123,8 +125,7 @@
           <a href="https://www.instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-    </footer>   
-
+    </footer> <!-- FIM RODAPÉ --> 
   </body>
 
   <script src="script.js"></script>

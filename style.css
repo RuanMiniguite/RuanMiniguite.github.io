@@ -17,7 +17,6 @@
     --font-action: "Mulish", serif;
 
     --cor-primary: #6e6e6e;
-    /* --cor-secundary: #00ADB5; */
     --cor-secundary: #FFFFFF;
     --cor-tertiary: #222326;
     
@@ -32,6 +31,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/* ICONE MENU LATERAL */
 .hamburguer{
     width: 1.7rem;
     height: 2.4rem;
@@ -45,8 +46,6 @@ html{
     transition: all 1.3s;
     z-index: 998;
 }
-
-
 
 .line{
     background-color: var(--cor-primary);
@@ -92,7 +91,10 @@ html{
     transition-delay: 0.6s;
     opacity: 1;
 }
+/* FIM ICONE MENU LATERAL */
 
+
+/* SESSÂO HOME */
 header{
     width: 100%;
     height: 100vh;
@@ -189,7 +191,10 @@ header{
         opacity: 1;
     }
 }
+/* FIM SESSÂO HOME */
 
+
+/* BARRA LATERAL */
 .sidebar{
     background-color: rgba(27, 31, 35, 0.95);
     width: 20rem;
@@ -254,8 +259,10 @@ header{
 .social-media i:hover{
     color: var(--cor-secundary);
 }
+/* FIM BARRA LATERAL */
 
 
+/* TITULOS DAS SESSÃO  */
 .sessao-header{
     display: flex;
     align-items: center;
@@ -268,11 +275,14 @@ header{
     text-transform: uppercase;
     font-size: 3rem;
     border-bottom: solid 3px var(--cor-secundary);
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     line-height: 3.7rem;
 }
+/* FIM TITULOS DAS SESSÃO */
 
+
+/* SESSÃO SOBRE */
 .sessao-about{
     width: 100%;
     background-color: #EEEEEE;
@@ -286,15 +296,22 @@ header{
 }
 
 .my-img img{
-    height: 300px;
+    height: 230px;
     width: 230px;
-    border-radius: 2%;
+    image-rendering: optimizeQuality;
+    border-radius: 1%;
     object-fit: cover;
 }
 
 .obout-body{
-    width: 40%;
+    width: 35vw;
     margin-left: 40px;
+}
+
+.obout-body h1{
+    color: var(--cor-tertiary);
+    font-family: var(--font-primary);
+    text-align: justify;
 }
 
 .obout-body p{
@@ -303,9 +320,24 @@ header{
     text-align: justify;
 }
 
-.sessao-cotact{
-   width: 100%;
-   padding-bottom: 7rem;
+#p2{
+    margin-top: 1.5rem;
+    text-align: justify;
+    text-align-last: initial;
+}
+
+#p3{
+    text-align-last: end;
+}
+
+
+/* FIM SESSÃO SOBRE */
+
+
+/* SESSÂO CONTATO */
+.sessao-contact{
+    width: 100%;
+    padding-bottom: 7rem;
 }
 
 .contact-body{
@@ -314,80 +346,78 @@ header{
     justify-content: center;
 }
 
-.box-input{
-    margin-top: 1rem;
-    flex-direction: column;
-    width: 50%;
-}
-
 .input-group{
     position: relative;
+    width: 50vw;
+    
+}
+
+.input-group input{
+    width: 100%;
 }
 
 .field{
     background: transparent;
     font-family: var(--font-action);
-    width: 25rem;
-    height: 40px;
-    min-height: 44px;
+    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 1.3rem;
+    min-height: 40px;
     border: 1px solid #ccc;
     text-rendering: optimizeLegibility;
     outline: none;
-    margin: 1rem 1rem;
     font-size: 1rem;
-    padding-left: 10px;
-    
-}   
-
-.input-group textarea{
-    width: 392px;
-    max-width: 392px;
-    min-height: 100px;
-    max-height: 30vh;
-    padding: 15px 9px;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .field-label{
     position: absolute;
     left: 0;
-    margin-left: 1.3rem;
     top: 0;
     font-family: var(--font-action);
     font-weight: 600;
     font-size: 0.9rem;
     color: black;
     text-transform: uppercase;
-    transition: all 0.3s;
 }
 
 .btn-submit{
+    width: 50.1vw;
     color: var(--cor-secundary);
     font-size: .9rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-family: var(--font-action);
     background-color: var(--cor-tertiary);
-    border-color: #FFFFFF;
-    border: .1rem solid;
-    margin-left: 16px;
+    border: 1px solid var(--cor-tertiary);
     padding: .7rem 3rem;
     cursor: pointer;
     transition: color 0.5s;
+    margin-bottom: 2rem;
 }
 
 .btn-submit:hover{
     background-color: var(--cor-primary);
+    border: 1px solid var(--cor-primary);
 }
 
 .contact-body p{
+    width: 50vw;
     font-family: var(--font-primary);
     font-size: 1rem;
-    margin-top: 2rem;
-    margin-left: 16px;
     letter-spacing: 1px;
+    text-align: center;
 }
+/* FIM SESSÂO CONTATO */
 
+
+/* RODAPÉ  */
 footer{
     width: 100%;
     height: 8rem;
@@ -425,7 +455,10 @@ footer{
 .social-list a:hover{
     color: var(--cor-secundary);
 }
+/* FIM RODAPÉ */
 
+
+/* LOADER */
 .overlay{
     position: fixed;
     top: 0;
@@ -437,4 +470,81 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+
+    .obout {
+        flex-direction: column;
+    }
+
+    .obout-body{
+        width: 80vw;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .my-img{
+        margin-top: 2rem;
+    }
+
+    .input-group{
+        width: 80vw;
+    }
+
+    .btn-submit{
+        width: 80.2vw;
+    }
+
+    .contact-body p{
+        width: 80vw;
+    }
+}
+
+
+@media only screen and (max-width: 620px){
+
+    html{
+        overflow-x: hidden;
+        max-width: 100%;
+    
+    }
+
+    .banner p{
+        width: 70vw;
+    }
+
+    .banner button{
+      display: none !important;
+    }
+
+    .input-group{
+        width: 90vw;
+    }
+
+    .btn-submit{
+        width: 90.2vw;
+    }
+
+    footer{
+        height: 10rem;
+    }
+
+    .footer-content{
+        align-items: center;
+    }
+
+    .footer-content p{
+        width: 35vw;
+    }
+
+    .social-list a{
+        display: flex;
+        width: 2.5rem;
+        height: 1rem;
+        font-size: 1.5rem;
+        padding: 0.7rem;
+    }
 }
