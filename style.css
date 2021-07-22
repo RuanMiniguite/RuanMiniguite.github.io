@@ -473,8 +473,7 @@ footer{
 }
 
 
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 950px){
 
     .obout {
         flex-direction: column;
@@ -501,35 +500,9 @@ footer{
     .contact-body p{
         width: 80vw;
     }
-}
-
-
-@media only screen and (max-width: 620px){
-
-    html{
-        overflow-x: hidden;
-        max-width: 100%;
-    
-    }
-
-    .banner p{
-        width: 70vw;
-    }
-
-    .banner button{
-      display: none !important;
-    }
-
-    .input-group{
-        width: 90vw;
-    }
-
-    .btn-submit{
-        width: 90.2vw;
-    }
 
     footer{
-        height: 10rem;
+        height: 13rem;
     }
 
     .footer-content{
@@ -546,5 +519,30 @@ footer{
         height: 1rem;
         font-size: 1.5rem;
         padding: 0.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 620px){
+
+    html{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .banner p{
+        width: 70vw;
+    }
+
+    .banner button{
+      display: none !important;
+    }
+
+    .input-group{
+        width: 90vw;
+    }
+
+    .btn-submit{
+        width: 90.2vw;
     }
 }

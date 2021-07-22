@@ -4,19 +4,19 @@
 ---
 
 ### ABOUT
-Portfólio pessoal de desenvolvedor, em construção!
+Portfólio pessoal de desenvolvedor
+:warning: Em construção! 
 
 ### LANGUAGE AND TOOLS
 #### FRONT END
 
 ![HTML5](https://img.shields.io/badge/-HTML5-181717?style=flat-square&logo=html5&logoColor=ffffff)
-![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=FFFFFF&labelColor=181717&color=181717)
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=FFFFFF&https://ruanminiguite.github.io/labelColor=181717&color=181717)
 ![CSS3](https://img.shields.io/badge/-CSS3-181717?style=flat-square&logo=css3)
 
 #### BACK END
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=FFFFFF&labelColor=181717&color=181717)
-
 ### COMMIT ICON
 
 - :package: nova funcionalidade
