@@ -110,7 +110,7 @@ function drawStars(){
     initializeStars();
   }
   if(warp==0)
-  {c.fillStyle = "rgba(27,31,35, 0.85)";
+  {c.fillStyle = "rgba(27,31,35, 1)";
   c.fillRect(0,0, canvas.width, canvas.height);}
   c.fillStyle = "rgba(255, 255, 255, "+radius+")";
   for(i = 0; i < numStars; i++){
