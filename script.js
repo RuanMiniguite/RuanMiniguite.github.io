@@ -42,3 +42,4 @@ function limpar() {
   document.getElementById('name').value = "";
   document.getElementById('email').value = "";
 }
+

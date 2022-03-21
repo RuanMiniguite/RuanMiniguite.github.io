@@ -14,36 +14,36 @@
       margin-top: 2rem;
   }
 
-  .input-group{
-      width: 80vw;
+  .input-group input{
+    padding: 0em 0.5em 0em 0.5em;
+    width: 80vw;
   }
-
   .btn-submit{
-      width: 80.2vw;
+    width: 40vw;
   }
 
   .contact-body p{
-      width: 80vw;
+    width: 80vw;
   }
 
   footer{
-      height: 13rem;
+    height: 13rem;
   }
 
   .footer-content{
-      align-items: center;
+    align-items: center;
   }
 
   .footer-content p{
-      width: 35vw;
+    width: 40vw;
   }
 
   .social-list a{
-      display: flex;
-      width: 2.5rem;
-      height: 1rem;
-      font-size: 1.5rem;
-      padding: 0.7rem;
+    display: table-header-group;
+    width: 2.5rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    padding: 0.7rem;
   }
 }
 
@@ -51,23 +51,25 @@
 @media only screen and (max-width: 620px){
 
   html{
-      overflow-x: hidden;
-      max-width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   .banner p{
-      width: 70vw;
+    width: 70vw;
   }
 
   .banner button{
     display: none !important;
   }
 
-  .input-group{
-      width: 90vw;
+  .input-group input{
+    padding: 0em 0.5em 0em 0.5em;
+    width: 90vw;
   }
 
   .btn-submit{
-      width: 90.2vw;
+    width: 45vw;
+    padding: .7rem 1rem;
   }
 }
