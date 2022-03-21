@@ -22,7 +22,6 @@
 }
 
 
-
 ::selection {
     color : #FFFFFF;
     background: #232526;
@@ -212,9 +211,37 @@ header{
     right: 0;
 }
 
+.perfil{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    display: inline-grid;
+    justify-items: center;
+
+}
+
+.perfil img{
+    height: 90px;
+    width: 90px;
+    image-rendering: optimizeQuality;
+    border-radius: 50%;
+}
+
+.perfil a{
+    color: var(--cor-primary);
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+    font-weight: 100;
+    transition: color 0.4s;
+}
+
+.perfil a:hover{
+    color: var(--cor-secundary);
+}
+
 .menu{
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
