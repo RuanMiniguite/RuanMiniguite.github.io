@@ -110,9 +110,8 @@ function drawStars(){
     initializeStars();
   }
   if(warp==0)
-  {c.fillStyle = "rgba(27,31,35, 1)";
+  {c.fillStyle = "rgba(255,255, 255, .7)";
   c.fillRect(0,0, canvas.width, canvas.height);}
-  c.fillStyle = "rgba(255, 255, 255, "+radius+")";
   for(i = 0; i < numStars; i++){
     star = stars[i];
     
@@ -123,7 +122,7 @@ function drawStars(){
     pixelRadius = 1 * (focalLength / star.z);
     
     c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
-    c.fillStyle = "rgba(200, 255, 255, "+star.o+")";
+    c.fillStyle = "rgba(0, 0, 0, "+star.o+")";
     //c.fill();
   }
 }
