@@ -1,19 +1,16 @@
 <!--  
     Ruan Pezzin Miniguite
-    V. 2.1 
+    V. 2.2 
 -->
 
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
-
-  <a href="https://github.com/RuanMiniguite">
-    <img src="/imagens/android-chrome-512x512.png" alt="Logo" width="100" height="100">
-  </a>
-  <h3 align="center">Portfólio</h3>
-  <p align="center">
-    Portfólio pessoal de desenvolvedor
-  </p>
+  <a href="https://github.com/RuanMiniguite"><img src="/imagens/android-chrome-512x512.png" alt="Logo" width="110"></a>
+  
+  <h3>Portfólio</h3>
+  <p>Portfólio pessoal de desenvolvedor</p>
 </div>
+
 
 
 <!-- ===== SUMARIO ===== -->
@@ -33,6 +30,7 @@
 ---
 
 
+
 <!-- ============== SHIELDS ============== -->
 <div align="center">
 
@@ -42,52 +40,49 @@
   [![GitHub License][GitHub License-shields]][GitHub License-link]
   [![Website][Website-shields]][Website-link]
 
-  <h4 align="center"> 
-    🚧  Project under construction...  🚧
-  </h4>
+  <h4>🚧 Project under construction... 🚧</h4>
 </div>
+
 
 
 <!-- ============== ABOUT ============== -->
 ## About the project
 
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/925787834638544956/925789165717717072/default.png?width=1214&height=683" width=80%>
-<br><br>
+  <!-- <img src="" alt="Print" width=90% ><br><br> -->
 
   [![Site][Site-shields]][Site-link]
 </div>
 
-<p></p>
+<p>Project description!</p>
+
 
 
 <!-- ============== LAYOUT ============== -->
-## Layout
+<!-- ## Layout
 
 <div>
-
-  <img src="https://media.discordapp.net/attachments/925787834638544956/925790164939337778/default.png?width=388&height=683" width="25%">
-  <img src="https://media.discordapp.net/attachments/925787834638544956/925790164939337778/default.png?width=388&height=683" width="25%">
-
-</div>
+  <img src="/assets/ImageDefaultMobile.jpg" alt="Print" width="25%">
+  <img src="/assets/ImageDefaultMobile.jpg" alt="Print" width="25%">
+  <img src="/assets/ImageDefaultMobile.jpg" alt="Print" width="25%">
+</div> -->
 
 
 <!-- ============== LANGUAGE ============== -->
 ## Language and tools
 
-<h4>Front end</h4>
- <ol>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-  </ol>
- 
-<h4>Back end</h4>
- <ol>
-    <li>JavaScript</li>
-    <li>GitHub Page</li>
-  </ol>
+#### Front end
+```
+> HTML5
+> CSS3
+> JavaScript
+```
 
+#### Back end
+```
+> JavaScript
+> GitHub Page
+```
 
 <!-- ============== IDEAS ============== -->
 <!-- ## Implementation ideas
@@ -117,12 +112,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ============== AUTHOR ============== -->
 ## Author
 
-[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=115" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)
-
+[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=210" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)
 
 
 <p align="right">(<a href="#header">back to top</a>)</p>
-
 
 <!-- ============== LINKs ============== -->
 <!-- Alterar link -->
