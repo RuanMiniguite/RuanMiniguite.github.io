@@ -1,154 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/responsivo.css">
-    <title>Ruan Miniguite</title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
-  <body>
-    <!-- LOADER -->
-    <div class="overlay">
-        <img src="imagens/loader.gif">
-    </div>
-    
-    <!-- CONTAINER MAIN -->
-    <div class="container">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/responsivo.css">
+        <title>Ruan Miniguite</title>
+    </head>
 
-      <!-- ICONE MENU LATERAL -->
-      <div class="hamburguer">
-        <div class="line" id="line1"></div>
-        <div class="line" id="line2"></div>
-        <div class="line" id="line3"></div>
-        <span>Fechar</span>
-      </div>
-      
-
-      <!-- HOME -->
-      <header id="home">
-        <div class="img-wrapper">
-           <!-- <img src="/imagens/img_bg1.jpg" alt=""> -->
-           <div id='w'>
-            <canvas id="space"></canvas>
-            <a href="#" id="warp"></a>
-          </div>
-        </div>
-        <div class="banner">
-          <h1>Systems analyst & Developer</h1>
-          <p>Ruan Pezzin Miniguite</p>
-          <button  onclick="window.location='#about'"> learn more</button>
-        </div>
-      
-        <div class="social-media">
-          <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://linkedin.com/in/ruan-miniguite-909962169" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-          <a href="https://twitter.com/ruanminiguite" target="_blank"><i class="fab fa-twitter-square"></i></a>
+    <body>
+        <div class="overlay">
+            <img src="imagens/loader.gif">
         </div>
 
-      </header>
+        <div class="container">
 
-
-      <!-- BARRA LATERAL -->
-      <aside class="sidebar">
-        
-        <div class="perfil">
-          <a href="https://github.com/RuanMiniguite"target="_blank"><img src="https://github.com/RuanMiniguite.png" alt="Foto de perfil"></a>
-          <a href="https://github.com/RuanMiniguite" target="_blank">Ruan Miniguite</a>
-        </div>
-        
-        <nav>
-          <ul class="menu">
-            <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-            <!-- <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li> -->
-            <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
-            <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
-          </ul>
-        </nav>
-
-
-        <!-- Buy coffee-->
-        <div class="buy-coffee">
-          <a href="https://www.buymeacoffee.com/ruanminiguite"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=ruanminiguite&button_colour=828282&font_colour=ffffff&font_family=Lato&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
-        </div>
-      </aside>
-       
-
-      <!-- CONHECIMENTO -->
-      <!-- PROJETOS -->
-
-
-      <!-- SOBRE -->
-      <section class="sessao-about" id="about">
-        <div class="sessao-header">
-          <h1>About</h1>
-        </div>
-        <div class="obout">
-          <div class="my-img">
-            <img src="https://github.com/RuanMiniguite.png" alt="Foto de perfil">
-          </div>
-          <div class="obout-body">
-            <h1>Hi I'm Ruan</h1>
-            <p>I am a student of information systems at the Federal Institute of Espírito Santo campus Cachoeiro de Itapemirim, i am currently dedicating myself to becoming a full stack developer, technology enthusiast, always looking for new challenges in the world of technology, in my spare time I like to study astronomy, fascinated by the cosmos</p>
-            <p id="p2">"In view of the vastness of time and the immensity of space, it is a joy for me to share a time and a planet with you!"</p>
-            <p id="p3">"Carl Sagan"</p>
-          </div>
-        </div>
-      </section>
-      
-    
-      <!-- CONTATO -->
-      <section class="sessao-contact" id="contact">
-        <div class="sessao-header">
-          <h1>Contact</h1>
-        </div>
-        
-        <div class="contact-body">
-          <form onsubmit="send()" id="form" class="form"> 
-            <div class="input-group">
-              <input type="text" class="field" id="name" required>
-              <label for="name" class="field-label">Name</label>
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>Fechar</span>
             </div>
-            <div class="input-group">
-              <input type="email" class="field" id="email" required>
-              <label for="email" class="field-label">Email</label>
+            
+
+            <header id="home">
+                <div class="img-wrapper">
+                    <!-- <img src="/imagens/img_bg1.jpg" alt=""> -->
+                    <div id='w'>
+                        <canvas id="space"></canvas>
+                        <a href="#" id="warp"></a>
+                    </div>
+                </div>
+                
+                <div class="banner">
+                    <h1>Systems analyst & Developer</h1>
+                    <p>Ruan Pezzin Miniguite</p>
+                    <button  onclick="window.location='#about'"> learn more</button>
+                </div>
+                
+                <div class="social-media">
+                    <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://linkedin.com/in/ruan-miniguite-909962169" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/ruanminiguite" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
+
+            </header>
+
+
+            <aside class="sidebar">
+                <div class="perfil">
+                    <a href="https://github.com/RuanMiniguite"target="_blank"><img src="https://github.com/RuanMiniguite.png" alt="Foto de perfil"></a>
+                    <a href="https://github.com/RuanMiniguite" target="_blank">Ruan Miniguite</a>
+                </div>
+                
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                        <!-- <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li> -->
+                        <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+                        <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="buy-coffee">
+                    <a href="https://www.buymeacoffee.com/ruanminiguite"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=ruanminiguite&button_colour=828282&font_colour=ffffff&font_family=Lato&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+                </div>
+            </aside>
+            
+
+            <!-- CONHECIMENTO -->
+            <!-- PROJETOS -->
+
+            <section class="sessao-about" id="about">
+                <div class="sessao-header">
+                    <h1>About</h1>
+                </div>
+                <div class="obout">
+                    <div class="my-img">
+                        <img src="https://github.com/RuanMiniguite.png" alt="Foto de perfil">
+                    </div>
+                    <div class="obout-body">
+                        <h1>Hi I'm Ruan</h1>
+                        <p>I am a student of information systems at the Federal Institute of Espírito Santo campus Cachoeiro de Itapemirim, i am currently dedicating myself to becoming a full stack developer, technology enthusiast, always looking for new challenges in the world of technology, in my spare time I like to study astronomy, fascinated by the cosmos</p>
+                        <p id="p2">"In view of the vastness of time and the immensity of space, it is a joy for me to share a time and a planet with you!"</p>
+                        <p id="p3">"Carl Sagan"</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section class="sessao-contact" id="contact">
+                <div class="sessao-header">
+                    <h1>Contact</h1>
+                </div>
+            
+                <div class="contact-body">
+                    <form onsubmit="send()" id="form" class="form"> 
+                        <div class="input-group">
+                            <input type="text" class="field" id="name" required>
+                            <label for="name" class="field-label">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="field" id="email" required>
+                            <label for="email" class="field-label">Email</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Send</button>
+                        <p>If you have any questions, need help or just want to chat, please contact me: ruanminiguitecontato@gmail.com</p>
+                    </form>    
+                </div>
+            </section>
+
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy; 2022 - All rights reserved.</p>
+                <div class="social-list">
+                    <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://linkedin.com/in/ruan-miniguite-909962169" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/ruanminiguite" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
             </div>
-            <button type="submit" class="btn-submit">Send</button>
-            <p>If you have any questions, need help or just want to chat, please contact me: ruanminiguitecontato@gmail.com</p>
-          </form>    
-        </div>
-      </section>
+        </footer>
+    </body>
 
-    </div>
-   
-
-    <!-- RODAPÉ -->
-    <footer>
-      <div class="footer-content">
-        <p>
-          Copyright &copy; 2022 - All rights reserved.
-        </p>
-        <div class="social-list">
-          <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://linkedin.com/in/ruan-miniguite-909962169" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-          <a href="https://twitter.com/ruanminiguite" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        </div>
-      </div>
-    </footer>
-  </body>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </html>
