@@ -16,7 +16,7 @@
     --font-action: "Bebas Neue", serif;
   
     --cor-primary: #6e6e6e;
-    --cor-secundary: #FFFFFF;
+    --cor-secundary: #1b1f23;
     --cor-tertiary: #1b1f23;
     
 }
@@ -30,8 +30,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-/* ICONE MENU LATERAL */
 .hamburguer{
     width: 1.7rem;
     height: 2.4rem;
@@ -90,10 +88,7 @@ html{
     transition-delay: 0.6s;
     opacity: 1;
 }
-/* FIM ICONE MENU LATERAL */
 
-
-/* SESSÂO HOME */
 header{
     width: 100%;
     height: 100vh;
@@ -166,7 +161,6 @@ header{
     color: var(--cor-secundary);
     /* background: -webkit-linear-gradient(to right, #414345a2, #232526a2);  
     background: linear-gradient(to right, #414345a2, #232526a2); */
-
 }
 
 @keyframes moveBanner {
@@ -178,7 +172,6 @@ header{
         opacity: 1;
     }
 }
-
 
 .social-media{
     position: absolute;
@@ -202,10 +195,7 @@ header{
 .social-media i:hover{
     color: var(--cor-secundary);
 }
-/* FIM SESSÂO HOME */
 
-
-/* BARRA LATERAL */
 .sidebar{
     background-color: #1a1e22e0;
     width: 20rem;
@@ -300,11 +290,6 @@ header{
     justify-content: center;
 }
 
-
-/* FIM BARRA LATERAL */
-
-
-/* TITULOS DAS SESSÃO  */
 .sessao-header{
     display: flex;
     align-items: center;
@@ -321,10 +306,7 @@ header{
     margin-bottom: 4rem;
     line-height: 3.7rem;
 }
-/* FIM TITULOS DAS SESSÃO */
 
-
-/* SESSÃO SOBRE */
 .sessao-about{
     width: 100%;
     background-color: #EEEEEE;
@@ -372,11 +354,6 @@ header{
     text-align-last: end;
 }
 
-
-/* FIM SESSÃO SOBRE */
-
-
-/* SESSÂO CONTATO */
 .sessao-contact{
     width: 100%;
     padding-bottom: 7rem;
@@ -449,10 +426,7 @@ header{
     letter-spacing: 1px;
     text-align: center;
 }
-/* FIM SESSÂO CONTATO */
 
-
-/* RODAPÉ  */
 footer{
     width: 100%;
     height: 9rem;
@@ -491,10 +465,7 @@ footer{
 .social-list a:hover{
     color: var(--cor-secundary);
 }
-/* FIM RODAPÉ */
 
-
-/* LOADER */
 .overlay{
     position: fixed;
     top: 0;
