@@ -1,0 +1,46 @@
+.sessao-about{
+  width: 100%;
+  background-color: #EEEEEE;
+  padding-bottom: 7rem;
+}
+
+.obout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-img img{
+  height: 230px;
+  width: 230px;
+  image-rendering: optimizeQuality;
+  border-radius: 1%;
+  object-fit: cover;
+}
+
+.obout-body{
+  width: 35vw;
+  margin-left: 40px;
+}
+
+.obout-body h1{
+  color: var(--cor-tertiary);
+  font-family: var(--font-primary);
+  text-align: justify;
+}
+
+.obout-body p{
+  color: var(--cor-tertiary);
+  font-family: var(--font-primary);
+  text-align: justify;
+}
+
+#p2{
+  margin-top: 1.5rem;
+  text-align: justify;
+  text-align-last: initial;
+}
+
+#p3{
+  text-align-last: end;
+}

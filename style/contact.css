@@ -1,0 +1,73 @@
+.sessao-contact{
+  width: 100%;
+  padding-bottom: 7rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group{
+  position: relative;
+}
+
+.input-group input{
+  padding: 0em 0.5em 0em 0.5em;
+  width: 40vw;
+}
+
+.field{
+  background: transparent;
+  font-family: var(--font-action);
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.3rem;
+  min-height: 40px;
+  border: 1px solid #ccc;
+  text-rendering: optimizeLegibility;
+  outline: none;
+  font-size: 1rem;
+}
+
+.field-label{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-action);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.btn-submit{
+  width: 25vw;
+  color: var(--cor-primary);
+  font-size: .9rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-family: var(--font-action);
+  background-color: var(--cor-tertiary);
+  border: 1px solid var(--cor-tertiary);
+  padding: .7rem 3rem;
+  cursor: pointer;
+  transition: color 0.5s;
+  margin-bottom: 2rem;
+}
+
+.btn-submit:hover{
+  background-color: var(--cor-primary);
+  border: 1px solid var(--cor-primary);
+  color: var(--cor-secundary);
+}
+
+.contact-body p{
+  width: 50vw;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+}

@@ -3,13 +3,6 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
     document.querySelector(".container").classList.toggle("show-menu")
 );
 
-//Loader
-const overlay = document.querySelector(".overlay");
-
-window?.addEventListener("load", function () {
-    overlay.style.display = "none";
-});
-
 //email
 const send = async () => {
   event.preventDefault();
