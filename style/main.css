@@ -15,14 +15,15 @@
     --font-secundary: "Rock Salt", serif;
     --font-action: "Bebas Neue", serif;
   
-    --cor-primary: #6e6e6e;
-    --cor-secundary: #1b1f23;
-    --cor-tertiary: #1b1f23;
-    
+    --cor-primary:      #000000;
+    --cor-secundary:    #1b1f23;
+    --cor-button:       #535353;
+    --cor-action1:      #FFFFFF;
+    --cor-action2:      #03a196;
 }
 
 ::selection {
-    color : #FFFFFF;
+    color :     #FFFFFF;
     background: #232526;
 }
 
@@ -30,76 +31,11 @@ html{
     scroll-behavior: smooth;
 }
 
-.hamburguer{
-    width: 1.7rem;
-    height: 2.4rem;
-    position: fixed;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-    transition: all 1.3s;
-    z-index: 10001;
-}
-
-.line{
-    background-color: var(--cor-primary);
-    width: 100%;
-    height: .1rem;
-    box-shadow: 0.1rem 0.1rem 1px rgb(27, 31, 25);
-    transition: transform 1.8s;
-}
-
-.show-menu .hamburguer{
-    right: 16rem;
-}
-
-.show-menu #line2{
-    transform: translate(-.3rem)
-}
-
-.hamburguer span{
-    background-color: var(--cor-secundary);
-    color: var(--cor-tertiary);
-    font-family: var(--font-action);
-    position: absolute;
-    left: 3rem;
-    width: 6rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-}
-
-.hamburguer span::before{
-    content: "";
-    position: absolute;
-    border-right: .5rem solid var(--cor-secundary);
-    border-top: .5rem solid transparent;
-    border-left: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
-    left: -1rem;
-}
-
-.show-menu .hamburguer:hover span{
-    transition-delay: 0.6s;
-    opacity: 1;
-}
-
 header{
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
-}
-
-.img-wrapper{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
 
 .img-wrapper canvas{
@@ -115,34 +51,33 @@ header{
 }
 
 .banner h1{
-    color: var(--cor-secundary);
+    color: var(--cor-primary);
     font-size: 5.5rem;
-    font-weight: 700;
     font-style: normal;
     font-family: var(--font-title);
     font-weight: 600;
+    text-transform: uppercase;
     text-rendering: optimizeLegibility;
-    text-shadow: .2rem .3rem 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
     line-height: 4.5rem;
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: moveBanner 1s 0.5s forwards;
-    text-transform: uppercase;
 }
 
 .banner p{
-    color: var(--cor-secundary);
+    color: var(--cor-primary);
     font-size: 1.5rem;
     letter-spacing: .3rem;
     font-family: var(--font-secundary);
-    text-shadow: .2rem .3rem 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
     margin-bottom: 2rem;
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner button{
-    color: var(--cor-primary);
+    color: var(--cor-button);
     font-size: 1.0rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -158,9 +93,7 @@ header{
 }
 
 .banner button:hover{
-    color: var(--cor-secundary);
-    /* background: -webkit-linear-gradient(to right, #414345a2, #232526a2);  
-    background: linear-gradient(to right, #414345a2, #232526a2); */
+    color: var(--cor-action2);
 }
 
 @keyframes moveBanner {
@@ -173,7 +106,6 @@ header{
     }
 }
 
-
 .social-media{
     position: absolute;
     bottom: 2.5rem;
@@ -183,10 +115,10 @@ header{
 }
 
 .social-media i{
-    color: var(--cor-primary);
+    color: var(--cor-button);
     width: 2.5rem;
     height: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,101 +126,7 @@ header{
 }
 
 .social-media i:hover{
-    color: var(--cor-secundary);
-}
-
-.sidebar{
-    background-color: #1a1e22e0;
-    width: 20rem;
-    height: 100vh;
-
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    transition: all 1s;
-    z-index: 10000;
-}
-
-.sidebar:hover{
-    background-color: #16191d;
-}
-
-.show-menu .sidebar{
-    right: 0;
-}
-
-.perfil{
-    position: absolute;
-    top: 15%;
-    width: 100%;
-    display: inline-grid;
-    justify-items: center;
-
-}
-
-.perfil img{
-    height: 90px;
-    width: 90px;
-    image-rendering: optimizeQuality;
-    border-radius: 50%;
-}
-
-.perfil a{
-    color: var(--cor-primary);
-    font-family: var(--font-action);
-    font-size: 1.5rem;
-    font-weight: 100;
-    transition: color 0.4s;
-}
-
-.perfil a:hover{
-    color: var(--cor-secundary);
-}
-
-.menu{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu-item{
-    text-align: center;
-    margin: 1.5rem;
-}
-
-.menu-link{
-    color: var(--cor-primary);
-    font-family: var(--font-action);
-    font-size: 2.2rem;
-    font-weight: 300;
-    transition: color 0.4s;
-}
-
-.menu-link:hover{
-    color: var(--cor-secundary);
-}
-
-.buy-coffee{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    bottom: 1.5rem;
-    justify-content: center;
-}
-
-.buy-coffee img{
-    height: 100%;
-    width: 100%;
-    background-color: #828282;
-}
-
-.buy-coffee a{
-    position: absolute;
-    width: 65%;
-    display: flex;
-    bottom: 2rem;
-    justify-content: center;
+    color: var(--cor-action2);
 }
 
 .sessao-header{
@@ -427,45 +265,6 @@ header{
     font-size: 1rem;
     letter-spacing: 1px;
     text-align: center;
-}
-
-footer{
-    width: 100%;
-    height: 9rem;
-    background-color: var(--cor-tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-content{
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer-content p{
-    color: #FFF;
-    font-family: var(--font-primary);
-    letter-spacing: .04rem;
-    font-size: .9rem;
-}
-
-.social-list a{
-    display: contents;
-    color: var(--cor-primary);
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    transition: color 0.3s;
-    padding: 0.6rem;
-}
-
-.social-list a:hover{
-    color: #FFF;
 }
 
 .overlay{

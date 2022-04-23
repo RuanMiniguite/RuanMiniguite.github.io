@@ -1,0 +1,38 @@
+footer{
+  width: 100%;
+  height: 9rem;
+  background-color: var(--cor-secundary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content{
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-content p{
+  color: #FFF;
+  font-family: var(--font-primary);
+  letter-spacing: .04rem;
+  font-size: .9rem;
+}
+
+.social-list a{
+  display: contents;
+  color: var(--cor-button);
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+  padding: 0.6rem;
+}
+
+.social-list a:hover{
+  color: var(--cor-action2);
+}

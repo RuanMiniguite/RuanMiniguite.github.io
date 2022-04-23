@@ -1,0 +1,90 @@
+
+.sidebar{
+  background-color: var(--cor-secundary);
+  width: 20rem;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+  z-index: 10000;
+}
+
+.show-menu .sidebar{
+  right: 0;
+}
+
+.perfil{
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  display: inline-grid;
+  justify-items: center;
+
+}
+
+.perfil img{
+  height: 90px;
+  width: 90px;
+  image-rendering: optimizeQuality;
+  border-radius: 2%;
+}
+
+.perfil a{
+  color: var(--cor-action1);
+  font-family: var(--font-action);
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: color 0.4s;
+}
+
+.perfil a:hover{
+  color: var(--cor-action2);
+}
+
+.menu{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-item{
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.menu-link{
+  color: var(--cor-action1);
+  font-family: var(--font-action);
+  font-size: 2.2rem;
+  font-weight: 300;
+  transition: color 0.4s;
+}
+
+.menu-link:hover{
+  color: var(--cor-action2);
+}
+
+.buy-coffee{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  bottom: 1.5rem;
+  justify-content: center;
+}
+
+.buy-coffee img{
+  height: 100%;
+  width: 100%;
+  background-color: #828282;
+}
+
+.buy-coffee a{
+  position: absolute;
+  width: 65%;
+  display: flex;
+  bottom: 2rem;
+  justify-content: center;
+}
