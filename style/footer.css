@@ -22,7 +22,7 @@ footer{
 
 .social-list a{
   display: contents;
-  color: var(--cor-button);
+  color: #afafaf;
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.5rem;
