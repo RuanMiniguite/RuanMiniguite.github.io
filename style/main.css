@@ -16,11 +16,28 @@
     --font-action: "Bebas Neue", serif;
   
     --cor-primary:      #000000;
-    --cor-secundary:    #1b1f23;
-    --cor-button:       #535353;
+    --cor-secundary:    #303841;
+    --cor-button:       #BBBFCA;
     --cor-action1:      #FFFFFF;
-    --cor-action2:      #03a196;
+    --cor-action2:      #00ADB5;
+    /* --cor-action2:      #03a196;*/
 }
+
+/* #git:hover{
+    color: #FFFFFF;
+}
+#fac:hover{
+    color: #3b5998;
+}
+#lin:hover{
+    color: #007bb6;
+}
+#ins:hover{
+    color: #a50756;
+}
+#twi:hover{
+    color: #00aced;
+} */
 
 ::selection {
     color :     #FFFFFF;
