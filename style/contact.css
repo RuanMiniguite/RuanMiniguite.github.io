@@ -45,12 +45,12 @@
 
 .btn-submit{
   width: 25vw;
-  color: var(--cor-primary);
+  color: var(--cor-action1);
   font-size: .9rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: .2rem;
   font-family: var(--font-action);
-  background-color: var(--cor-tertiary);
+  background-color: var(--cor-secundary);
   border: 1px solid var(--cor-tertiary);
   padding: .7rem 3rem;
   cursor: pointer;
@@ -60,8 +60,8 @@
 
 .btn-submit:hover{
   background-color: var(--cor-primary);
-  border: 1px solid var(--cor-primary);
-  color: var(--cor-secundary);
+  border: 0px solid var(--cor-primary);
+  color: var(--cor-action2);
 }
 
 .contact-body p{
