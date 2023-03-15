@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+:root{
+    --font-1: "Oswald",sans-serif;
+    --font-2: "Shadows Into Light",sans-serif;
+    --font-3: "Rock Salt", serif;
+    --font-4: "Bebas Neue", serif;
+
+    --cor-1: #000000;
+    --cor-2: #303841;
+    --cor-3: #BBBFCA;
+    --cor-4: #FFFFFF;
+    --cor-5: #6272a4;
+}
+
+::selection {
+    color :     #FFFFFF;
+    background: #232526;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
