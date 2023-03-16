@@ -1,0 +1,54 @@
+.section-formation{
+  width: 100%;
+  background-color: var(--cor-5);
+  padding-bottom: 7rem;
+}
+
+.formation-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.img-formation{
+  object-fit: cover;
+}
+
+.txt-formation{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: var(--font-1);
+  padding: 20px;
+}
+
+.txt-formation p{
+  margin-bottom: 2rem;
+}
+
+.txt-formation a{
+  width: 50%;
+}
+
+.txt-formation button{
+  width: 200px;
+  color: var(--cor-1);
+  font-size: .9rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-family: var(--font-1);
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid var(--cor-2);
+  padding: .6rem 3rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.txt-formation button:hover{
+  border: 1px solid var(--cor-6);
+  color: var(--cor-6);
+}
