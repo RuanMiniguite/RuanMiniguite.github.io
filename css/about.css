@@ -1,0 +1,44 @@
+.section-about{
+  width: 100%;
+  background-color: var(--cor-4);
+  padding-bottom: 7rem;
+}
+
+.obout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-img img{
+  height: 230px;
+  width: 230px;
+  image-rendering: optimizeQuality;
+  object-fit: cover;
+}
+
+.obout-body{
+  width: 35vw;
+  margin-left: 40px;
+  text-align: justify;
+}
+
+.obout-body h1{
+  color: var(--cor-1);
+  font-family: var(--font-1);
+  
+}
+
+.obout-body p{
+  color: var(--cor-1);
+  font-family: var(--font-1);
+}
+
+#p2{
+  margin-top: 1.5rem;
+  text-align-last: initial;
+}
+
+#p3{
+  text-align-last: end;
+}
