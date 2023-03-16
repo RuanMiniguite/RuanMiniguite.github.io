@@ -26,3 +26,122 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper canvas{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover
+}
+
+.banner{
+    width: 80vw;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+.banner h1{
+    color: var(--cor-1);
+    font-family: var(--font-2);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+    line-height: 4.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p{
+    color: var(--cor-1);
+    font-family: var(--font-3);
+    font-size: 1.5rem;
+    letter-spacing: .3rem; 
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner button{
+    color: var(--cor-2);
+    font-family: var(--font-4);
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    border: .1rem solid;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 2s 0.9s forwards;
+    transition: color .5s;
+}
+
+.banner button:hover{
+    color: var(--cor-5);
+}
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.social-media i{
+    color: var(--cor-2);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.social-media i:hover{
+    color: var(--cor-5);
+}
+
+
+
+/* Header to section */
+
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header h1{
+    color: var(--cor-1);
+    font-family: var(--font-2);
+    border-bottom: solid 3px var(--cor-5);
+    text-transform: uppercase;
+    font-size: 4.4rem;
+    margin: 4rem 0rem;
+    line-height: 3.7rem;
+}
