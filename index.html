@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/iconSidebar.css">
+        
+        <title>Ruan Miniguite</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>Fechar</span>
+            </div>
+
+            <header id="home">
+                <div class="img-wrapper">
+                    <div id='w'>
+                        <canvas id="space"></canvas>
+                        <a href="#" id="warp"></a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <h1>Analista de sistemas & Desenvolvedor</h1>
+                    <p>Ruan Pezzin Miniguite</p>
+                    <button  onclick="window.location='#about'">saber mais</button>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/RuanMiniguite" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://facebook.com/ruan.miniguite.1/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://linkedin.com/in/ruan-miniguite-909962169" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/ruanminiguite/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/ruanminiguite" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCVf2jXpu0GmsfJon7cm-s3A" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </header>
+
+            <aside class="sidebar">
+                <div class="profile">
+                    <a href="https://github.com/RuanMiniguite"target="_blank"><img src="https://github.com/RuanMiniguite.png" alt="Profile picture"></a>
+                    <a href="https://github.com/RuanMiniguite" target="_blank">Ruan Miniguite</a>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#home" class="menu-link">início</a></li>
+                        <li class="menu-item"><a href="#about" class="menu-link">sobre</a></li>
+                        <li class="menu-item"><a href="#projects" class="menu-link">projetos</a></li>
+                        <li class="menu-item"><a href="#formation" class="menu-link">formação</a></li>
+                        <li class="menu-item"><a href="#certification" class="menu-link">certificações</a></li>
+                        <li class="menu-item"><a href="#skills" class="menu-link">habilidades</a></li>
+                        <li class="menu-item"><a href="#contact" class="menu-link">contato</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </body>
 
     <!-- JS -->
     <script src="js/main.js"></script>
-    
-    <title>Ruan Miniguite</title>
-</head>
-<body>
-
-</body>
+    <script src="js/space.js" ></script>
 </html>
