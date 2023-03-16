@@ -1,0 +1,66 @@
+.sidebar{
+  background-color: var(--cor-2);
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+  z-index: 900;
+}
+
+.show-menu .sidebar{
+  right: 0;
+}
+
+.profile{
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.profile:hover{
+  transform: scale(1.1);
+  letter-spacing: 1px;
+}
+
+.profile img{
+  height: 90px;
+  image-rendering: optimizeQuality;
+}
+
+.profile a{
+  color: var(--cor-4);
+  font-family: var(--font-3);
+  font-size: 1.5rem;
+  transition: color 0.4s;
+}
+
+.menu{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-item{
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.menu-link{
+  color: var(--cor-4);
+  font-family: var(--font-4);
+  font-size: 2.2rem;
+  font-weight: 300;
+  transition: all 0.4s;
+}
+
+.menu-link:hover{
+  color: var(--cor-5);
+  letter-spacing: 2px;
+}
