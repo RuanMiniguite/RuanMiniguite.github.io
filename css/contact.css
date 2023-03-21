@@ -1,0 +1,54 @@
+.section-contact{
+  width: 100%;
+  background-color: var(--cor-4);
+  padding-bottom: 7rem;
+}
+
+.contact-body{
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-item{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contact-item i{
+  color: var(--cor-2);
+  font-size: 3rem;
+  margin: 7px;
+}
+
+.contact-item h1{
+  color: var(--cor-2);
+  font-size: 1.2rem;
+  letter-spacing: .04rem;
+  font-family: var(--font-4);
+}
+
+.contact-item p{
+  color: var(--cor-2);
+  font-size: 1rem;
+  letter-spacing: .03rem;
+  font-family: var(--font-1);
+}
+
+.contact-item:hover > i, 
+.contact-item:hover > h1, 
+.contact-item:hover > p{
+  color: var(--cor-6);
+}
+
+.contact-item:hover{
+  transform: scale(1.2);
+}
