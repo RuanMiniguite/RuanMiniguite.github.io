@@ -1,0 +1,47 @@
+.card-list {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  cursor: pointer;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 3px;
+  scroll-snap-align: start;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 55%;
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  font-family: var(--font-1);
+  letter-spacing: 0.1px;
+  margin-top: 0;
+}
+
+.card p {
+  font-family: var(--font-1);
+  font-size: .9rem;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+}
