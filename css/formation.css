@@ -33,6 +33,12 @@
   width: 50%;
 }
 
+#img-des{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE */
+}
+
 .txt-formation button{
   width: 200px;
   color: var(--cor-1);
