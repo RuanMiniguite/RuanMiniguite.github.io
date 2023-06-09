@@ -18,7 +18,12 @@
         <link rel="stylesheet" href="css/formation.css">
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/skills.css">
         
+        <!-- FONT AWESOME -->
+        <script src="https://unpkg.com/chart.js@4"></script>
+        <script src="https://unpkg.com/chartjs-chart-wordcloud@4"></script>
+
         <title>Ruan Miniguite</title>
     </head>
     <body>
@@ -102,9 +107,19 @@
                         <p>Bacharel em Sistemas de Informação</p>
                         <a href="https://repositorio.ifes.edu.br/handle/123456789/2685" target="_blank"><button>TCC</button></a>
                     </div>
-                </div>  
+                </div> 
             </section>
             
+            <!-- SKILLS -->
+            <section class="section-skills" id="skills">
+                <div class="section-header">
+                    <h1>Habilidades</h1>
+                </div>
+                <div class="skills">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </section>
+
             <!-- CONTACT -->
             <section class="section-contact" id="contact">
                 <div class="section-header">
@@ -168,4 +183,5 @@
     <!-- JS -->
     <script src="js/main.js"></script>
     <script src="js/space.js" ></script>
+    <script src="js/skills.js"></script>
 </html>

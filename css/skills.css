@@ -1,0 +1,19 @@
+.section-skills {
+  width: 100%;
+  background-color: #eee;
+  padding-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills {
+  width:90%;
+  height: 300px;
+  padding: 5px;
+}
+
+.skills canvas{
+  object-fit: cover;
+}
