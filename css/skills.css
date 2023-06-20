@@ -1,6 +1,6 @@
 .section-skills {
   width: 100%;
-  background-color: #eee;
+  background-color: var(--cor-5);
   padding-bottom: 7rem;
   display: flex;
   justify-content: center;
