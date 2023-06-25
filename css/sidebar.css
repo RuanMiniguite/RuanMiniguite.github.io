@@ -28,6 +28,10 @@
   letter-spacing: 1px;
 }
 
+.profile:active{
+  color: var(--cor-6);
+}
+
 .profile img{
   height: 90px;
   image-rendering: optimizeQuality;
@@ -61,6 +65,11 @@
 }
 
 .menu-link:hover{
-  color: var(--cor-6);
   letter-spacing: 2px;
+  color: var(--cor-6);
 }
+
+.menu-link:active{
+  font-size: 2.5rem;
+}
+

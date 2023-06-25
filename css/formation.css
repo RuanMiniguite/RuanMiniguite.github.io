@@ -15,6 +15,10 @@
   object-fit: cover;
 }
 
+.img-formation img{
+  width: 200px;
+}
+
 .txt-formation{
   width: 450px;
   display: flex;
@@ -33,11 +37,18 @@
   width: 50%;
 }
 
-#img-des{
+.button-formation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #img-des{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: gray; /* IE */
-}
+  filter: gray;
+} */
 
 .txt-formation button{
   width: 200px;
