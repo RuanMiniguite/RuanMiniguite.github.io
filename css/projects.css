@@ -1,0 +1,13 @@
+.section-projects{
+  width: 100%;
+  background-color: var(--cor-4);
+  padding-bottom: 7rem;
+}
+
+.projects {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 2%;
+}
