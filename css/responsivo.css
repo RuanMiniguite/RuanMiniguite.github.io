@@ -91,6 +91,15 @@
     margin-bottom: 2rem;
   }
 
+  .lightbox figcaption {
+    margin-top: 100px;
+    width: 90vw;
+}
+
+  .lightbox .close::after {
+      display: none;
+  }
+
   footer{
     height: 15rem;
   }
