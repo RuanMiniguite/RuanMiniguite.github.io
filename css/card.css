@@ -32,7 +32,7 @@
 .card h1 {
   font-family: var(--font-1);
   letter-spacing: 0.1px;
-  margin: 0 5px 0 5px;
+  margin: 0 5px 5px 5px;
 }
 
 .card p {
