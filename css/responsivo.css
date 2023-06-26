@@ -1,0 +1,102 @@
+@media only screen and (max-width: 1800px){
+  .banner h1{
+    font-size: 4.5rem;
+  }
+
+  .profile{
+    display: none;
+  }
+
+  .menu{
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .contact-body{
+    flex-direction: column;
+  }
+
+  .contact-item{
+    margin: 1rem 0;
+  }
+
+  .contact-item i{
+    font-size: 3.6rem;
+  }
+  
+  .contact-item h1{
+    font-size: 1.44rem;
+  }
+  
+  .contact-item p{
+    font-size: 1.2rem;
+
+  }
+}
+
+@media only screen and (max-width: 730px){
+  
+  .banner h1{
+    font-size: 2.5rem;
+  }
+
+  .banner p{
+    font-size: 1.2rem;
+  }
+
+  .obout {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills {
+    width: 100%;
+    height: 400px;
+  }
+
+  .formation-body{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .obout-body{
+    margin-left: 0px;
+  }
+
+  .txt-formation{
+    width: 100%;
+    align-items: center;
+  }
+
+  .img-formation img{
+    margin-bottom: 0rem;
+  }
+
+  .txt-formation{
+    padding: 0px;
+    text-align: center;
+  }
+
+  .txt-formation p{
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .obout-body{
+    width: 80vw;
+  }
+
+  .my-img img{
+    margin-bottom: 2rem;
+  }
+
+  footer{
+    height: 15rem;
+  }
+  
+  .footer-content{
+    flex-direction: column;
+    height: 70%;
+  }
+}
