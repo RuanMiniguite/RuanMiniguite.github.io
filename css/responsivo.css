@@ -83,6 +83,10 @@
     text-align: center;
   }
 
+  .txt-formation button{
+    margin-bottom: 2rem;
+  }
+
   .obout-body{
     width: 80vw;
   }

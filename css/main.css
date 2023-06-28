@@ -128,6 +128,44 @@ header{
 }
 
 
+.mouse{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.5rem;
+    height: 3rem;
+    border: .1rem solid var(--cor-2);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: moveMouse 1s infinite;  
+}
+
+.wheel{
+    width: .5rem;
+    height: .8rem;
+    border-radius: 30%;
+    background-color: var(--cor-2);
+    margin-bottom: 1rem;
+    
+}
+
+@keyframes moveMouse {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.3rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
 
 /* Header to section */
 .section-header{
