@@ -31,7 +31,6 @@
   
   .contact-item p{
     font-size: 1.2rem;
-
   }
 }
 
@@ -98,10 +97,10 @@
   .lightbox figcaption {
     margin-top: 100px;
     width: 90vw;
-}
+  }
 
   .lightbox .close::after {
-      display: none;
+    display: none;
   }
 
   footer{

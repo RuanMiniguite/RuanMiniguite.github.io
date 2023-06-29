@@ -3,7 +3,6 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
     document.querySelector(".container").classList.toggle("show-menu")
 );
 
-// icone mouse apagar quando pagina sair do topo
 window.onscroll = function () {
     scrollFunction();
 }

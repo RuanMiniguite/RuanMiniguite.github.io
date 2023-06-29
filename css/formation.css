@@ -44,12 +44,6 @@
   align-items: center;
 }
 
-/* #img-des{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-} */
-
 .txt-formation button{
   width: 200px;
   color: var(--cor-1);
