@@ -1,3 +1,9 @@
+const overlay = document.querySelector(".overlay")
+
+window?.addEventListener("load", function () {
+    overlay.style.display = "none"
+});
+
 //sidebar
 document.querySelector(".hamburguer").addEventListener("click", () =>
     document.querySelector(".container").classList.toggle("show-menu")
