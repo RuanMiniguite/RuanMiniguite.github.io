@@ -111,7 +111,9 @@
     flex-direction: column;
     height: 70%;
   }
+}
 
+@media only screen and (max-width: 500px){
   .mouse{
     display: none;
   }
