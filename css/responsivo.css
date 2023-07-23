@@ -111,4 +111,12 @@
     flex-direction: column;
     height: 70%;
   }
+
+  .mouse{
+    display: none;
+  }
+
+  .fone{
+    display: flex;
+  }
 }

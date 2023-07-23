@@ -15,8 +15,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.querySelector("#I-mouse").style.display = "none";
+        document.querySelector("#IconMouseAndFone").style.display = "none";
     } else {
-        document.querySelector("#I-mouse").style.display = "block";
+        document.querySelector("#IconMouseAndFone").style.display = "block";
     }
 }
